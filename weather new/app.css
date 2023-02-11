@@ -1,0 +1,213 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    background: linear-gradient(
+      134.6deg,
+      rgba(158, 150, 252, 0.85) -1%,
+      rgb(211, 133, 176) 16.9%,
+      rgb(249, 116, 146) 43.7%,
+      rgb(255, 158, 136) 66.9%,
+      rgb(254, 228, 172) 94.8%
+    );
+    background-repeat: no-repeat;
+    width: 90%;
+    margin: 0 5%;
+    height: 750px;
+  }
+
+  .app {
+    margin: 40px ;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #c493cf;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+  .city {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0;
+  }
+  
+  .city li {
+    font-size: 16px;
+    font-weight: 400;
+    height: 19px;
+    line-height: 1;
+    list-style: none;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 12px;
+    background-color: #ffb192;
+    border: none;
+    border-radius: 20px;
+  }
+  .button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: purple;
+    transition: 0.3s linear;
+  }
+
+  input[type="search"] {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: unset;
+  }
+  input[type="search"]:focus-visible {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: unset;
+    outline: unset;
+  }
+
+  
+  .location {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+  }
+  
+  .location h1 {
+    color: #fee4ac;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+  }
+  
+  .location p {
+    color: #ffcbcb;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .temperature {
+    color: #ffcbcb;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 2;
+  }
+  
+  .grau {
+    font-size: 50px;
+    vertical-align: text-bottom;
+    color: #ffcbcb;
+  }
+  
+  .units {
+    position: relative;
+    top: 70px;
+    font-size: 10px;
+    margin: 10px;
+    top: -34px;
+    color: #ffcbcb;
+  }
+  
+  .units a {
+    text-decoration: none;
+    color: #ffcbcb;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  
+  .bar {
+    font-size: 15px;
+    vertical-align: middle;
+    font-weight: 600;
+  }
+  
+  .active {
+    color: #ffcbcb;
+    cursor: default;
+  }
+  
+  .active :hover {
+    text-decoration: none;
+  }
+  
+  .discription {
+    margin: 0;
+    padding: 0;
+    color: #ffcbcb;
+  }
+  
+  .extraInfo {
+    text-align: left;
+    margin-top: 40px;
+    color: #ffb5b5;
+  }
+  
+  .weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #fee4ac;
+    font-weight: 900;
+    justify-content: center;
+  }
+  
+  .forecast-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .forecast-temperature {
+    color: #ffcbcb;
+    font-weight: 500;
+  }
+  
+  .forecast-temperature-max {
+    color: #ffb5b5;
+  }
+  
+  .link {
+    color: #132743;
+  }
+  .weather-forecast {
+    display: none;
+  }
+  .about-me {
+    display: none;
+  }
+
+nav button {
+  width: 60px;
+  height: 30px;
+  margin: 10px;
+  font-size: 12px;
+  background-color: #ffb192;
+  border: none;
+  border-radius: 20px;
+}
+nav button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: purple;
+  transition: 0.3s linear;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.about-me {
+  flex-direction: column;
+  margin: 0 50px;
+  align-items: center;
+}

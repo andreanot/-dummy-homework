@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js" defer></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <button id="homebtn" onclick="myHomeFunction()">Home</button>
+        <button id="hourlybtn" onclick="myHourlyFunction()" >Hourly</button>
+        <button id="aboutbtn" onclick="myAboutFunction()">About</button>
+    </nav>
+        <div class="container app">
+            <form class="search-form" id="search-form">
+              <div class="container text-center">
+                <div class="row align-items-start">
+                  <div class="col-6">
+                    <input
+                      type="search"
+                      placeholder="Location"
+                      autofocus="on"
+                      autocomplete="off"
+                      id="city-input"
+                      class="form-control shadow-sm"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <input
+                      type="submit"
+                      value="Search"
+                      class="form-control btn btn-dark shadow-sm button"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <!-- <button
+                      class="btn btn-dark shadow-sm button"
+                      id="current-location-button"
+                    >
+                      Current Location
+                    </button> -->
+                  </div>
+                </div>
+              </div>
+            </form>
+              <div class="row location" id="main-location">
+                <div class="col-5 text-center">
+                  <h1 id="city"></h1>
+                  <p>Last update: <span id="date"></span></p>
+                </div>
+              </div>
+              <div class="row col-12 d-flex" id="weather-details">
+                <p class="col-7 text-center">
+                  <img src="" alt="Clouds" id="icon" />
+                  <strong class="temperature" id="temperature"></strong
+                  ><span class="grau"> º</span>
+                  <span class="units">
+                    <a href="#" id="celsius-link" class="active">C</a>
+                    <span class="bar">|</span>
+                    <a href="#" id="fahrenheit-link">F</a>
+                  </span>
+                  <br />
+                  <span class="discription" id="wheather-discription"></span>
+                </p>
+                <p class="col-5 extraInfo">
+                  <span>Pressure:</span>
+                  <span id="pressure"></span><span> hPa</span><br />
+                  <span>Humidity:</span>
+                  <span id="humidity"></span><span> %</span><br />
+                  <span>Wind:</span>
+                  <span id="wind"></span><span> Km/H</span>
+                </p>
+              </div>
+              <!-- Hourly -->
+            <div class="container col-12 weather-forecast" id="forecast"></div>
+              <!-- About -->
+            <div class="container col-12 about-me" id="about">
+              <h3>Weather App</h3>
+              <p> Andrea Gjikovska SEDC G4</p>
+              	<span style="font-size: 30px;">&#128526;</span>
+            </div>
+          </div>
+      
+
+    
+
+</body>
+</html>
